@@ -7,11 +7,10 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP", function(self)
 	self.cosmetic_rewards = {}
 	
 	--rework cs
-	self.modifier_levels = {
-		loud = 20,
-		forced = 100000,
-		stealth = 26
-	}
+	--damage/health modifier every 100k spree
+	self.modifier_levels[2] = 100000
+	
+	--modifier multipliers
 	self.modifiers.forced[1].data.health[1] = 40000
 	self.modifiers.forced[1].data.damage[1] = 30000
 	self.repeating_modifiers.forced[1].data.health[1] = 40000
