@@ -30,4 +30,19 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "data", function(self)
 		0,
 		0
 	}
+		
+	--dont lose spree on crash
+	self.crash_causes_loss = false
+	
+	--faster animations
+	self.gui.randomize_time = {
+		1,
+		1
+	}
+	self.gui.spin_speed = 1600 
+	self.gui.spin_speed_limit = {
+		80,
+		2000
+	}
+		
 end)  
