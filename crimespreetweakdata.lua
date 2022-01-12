@@ -24,4 +24,29 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "data", function(self)
 	self.starting_levels[1] = 1000000
 	self.starting_levels[2] = 2000000
 	self.starting_levels[3] = 3500000
+		
+	--free continues
+	self.continue_cost = {
+		0,
+		0
+	}
+	
+	--free rerolls
+	self.randomization_cost = 0
+	self.randomization_multiplier = 0
+		
+	--dont lose spree on crash
+	self.crash_causes_loss = false
+	
+	--faster animations
+	self.gui.randomize_time = {
+		1,
+		1
+	}
+	self.gui.spin_speed = 1600 
+	self.gui.spin_speed_limit = {
+		160,
+		2000
+	}
+		
 end)  
