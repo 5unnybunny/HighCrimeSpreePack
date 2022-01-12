@@ -30,6 +30,10 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "data", function(self)
 		0,
 		0
 	}
+	
+	--free rerolls
+	self.randomization_cost = 0
+	self.randomization_multiplier = 0
 		
 	--dont lose spree on crash
 	self.crash_causes_loss = false
@@ -41,7 +45,7 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "data", function(self)
 	}
 	self.gui.spin_speed = 1600 
 	self.gui.spin_speed_limit = {
-		80,
+		160,
 		2000
 	}
 		
