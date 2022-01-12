@@ -1,4 +1,4 @@
-Hooks:PostHook(CrimeSpreeTweakData, "init", "data", function(self)
+Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP", function(self)
 	--remove rewards
 	for var1 = 1, 5, 1 do
 		self.rewards[var1].amount = 0
