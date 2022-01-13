@@ -1,6 +1,5 @@
---Hooks:PostHook(CrimeSpreeManager, "init", "HCSP_crimespreemanager", function(self)
 local csbad = CrimeSpreeManager._setup_modifiers
-
+--optimising the function
 function CrimeSpreeManager:_setup_modifiers()
 	csbad(self)
 		if not self:is_active() then
@@ -35,7 +34,7 @@ function CrimeSpreeManager:_setup_modifiers()
 						new_data[key] = (new_data[key] or 0) - value
 					elseif stack_method == "min" then
 						new_data[key] = math.min(new_data[key] or math.huge, value)
-					elseif stack_method == "max" then
+					else
 						new_data[key] = math.max(new_data[key] or -math.huge, value)
 					end
 				end
@@ -46,4 +45,3 @@ function CrimeSpreeManager:_setup_modifiers()
 		end
 	end
 end
-	--end)
