@@ -58,7 +58,7 @@ function CrimeSpreeManager:server_active_modifiers()
 			return self:in_progress() and self:active_modifiers() or {}
 		end
 	end
-end
+end--]]
 
 local set_cs_modifiers = CrimeSpreeManager.set_server_modifier
 
@@ -66,13 +66,13 @@ function CrimeSpreeManager:set_server_modifier(modifier_id, modifier_level, anno
 	set_cs_modifiers(self)
 		self._global.server_modifiers = self._global.server_modifiers or {}
 
-		for _, data in ipairs(self._global.server_modifiers) do
+		--[[for _, data in ipairs(self._global.server_modifiers) do
 			if data.id == modifier_id then
 				Application:error("Can not add the same server modifier twice!", modifier_id)
 
 				return
 			end
-		end
+		end--]]
 
 		table.insert(self._global.server_modifiers, {
 			id = modifier_id,
