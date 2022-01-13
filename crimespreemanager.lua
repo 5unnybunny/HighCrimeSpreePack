@@ -40,9 +40,6 @@ Hooks:PostHook(CrimeSpreeManager, "init", "HCSP_crimespreemanager", function(sel
 			else
 				Application:error("[CrimeSpreeManager] Can not activate modifier as it does not exist! Was it deleted?", active_data.id)
 			end
-			log( "anime tiddies" )
-			log( tostring(managers.player:player_unit():key()) )
-
 		end
 	end
 end)
