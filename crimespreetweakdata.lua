@@ -1,4 +1,4 @@
-Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP", function(self)
+Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function(self)
 	--remove rewards
 	for var1 = 1, 5, 1 do
 		self.rewards[var1].amount = 0
@@ -51,5 +51,8 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP", function(self)
 		160,
 		2000
 	}
-		
+	
+	--lockpicker king always available
+	self.assets.quick_locks.stealth = false
+	
 end)  
