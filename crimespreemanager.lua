@@ -39,27 +39,10 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreemanager", function(s
 	
 				
 				--modifiers_to_activate[modifier.class] = new_data
-				for class, data in pairs(new_data) do
-				local mod_class = _G[class]
+				managers.modifiers:add_modifier(new_data, "crime_spree")
 				
-				if mod_class then
-					managers.modifiers:add_modifier(mod_class:new(data), "crime_spree")
-				else
-					Application:error("Can not activate modifier as it does not exist!", class)
-				end
-	
 			else
 				Application:error("[CrimeSpreeManager] Can not activate modifier as it does not exist! Was it deleted?", active_data.id)
-			end
-		end
-	
-		for class, data in pairs(modifiers_to_activate) do
-			local mod_class = _G[class]
-	
-			if mod_class then
-				managers.modifiers:add_modifier(mod_class:new(data), "crime_spree")
-			else
-				Application:error("Can not activate modifier as it does not exist!", class)
 			end
 		end
 	end
