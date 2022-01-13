@@ -1,5 +1,8 @@
-Hooks:PostHook(CrimeSpreeManager, "init", "HCSP_crimespreemanager", function(self)
-	function CrimeSpreeManager:_setup_modifiers()
+--Hooks:PostHook(CrimeSpreeManager, "init", "HCSP_crimespreemanager", function(self)
+local csbad = CrimeSpreeManager._setup_modifiers
+
+function CrimeSpreeManager:_setup_modifiers()
+	csbad(self)
 		if not self:is_active() then
 			return
 		end
@@ -42,4 +45,5 @@ Hooks:PostHook(CrimeSpreeManager, "init", "HCSP_crimespreemanager", function(sel
 			end
 		end
 	end
-end)
+end
+	--end)
