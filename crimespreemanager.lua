@@ -10,7 +10,7 @@ function CrimeSpreeManager:_setup_modifiers()
 			for _, modifier in ipairs(self._modifiers) do
 				modifier:destroy()
 			end
-		end
+		end16
 	
 		self._modifiers = {}
 	
@@ -47,13 +47,12 @@ function CrimeSpreeManager:_setup_modifiers()
 end
 
 
-local server_modifiers = CrimeSpreeManager.server_active_modifiers
+--[[local server_modifiers = CrimeSpreeManager.server_active_modifiers
 
 function CrimeSpreeManager:server_active_modifiers()
 	server_modifiers(self)
 		if not self:_is_host() then
 			return self._global.server_modifiers or {}
-			--self:_add_frame_callback(callback(managers.menu_component, managers.menu_component, "refresh_crime_spree_details_gui"))
 		return {}
 		else
 			return self:in_progress() and self:active_modifiers() or {}
@@ -79,7 +78,7 @@ function CrimeSpreeManager:set_server_modifier(modifier_id, modifier_level, anno
 			id = modifier_id,
 			level = modifier_level
 		})
-		--self:_add_frame_callback(callback(managers.menu_component, managers.menu_component, "refresh_crime_spree_details_gui"))
+		self:_add_frame_callback(callback(managers.menu_component, managers.menu_component, "refresh_crime_spree_details_gui"))
 
 		if announce then
 			self:_add_frame_callback(callback(self, self, "_announce_modifier", modifier_id))

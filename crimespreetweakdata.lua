@@ -8,7 +8,7 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 	
 	--rework cs
 	--damage/health modifier every 100k spree
-	self.modifier_levels = {
+	--[[self.modifier_levels = {
 		loud = 20,
 		forced = 100000,
 		stealth = 26
@@ -18,7 +18,7 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 	self.modifiers.forced[1].data.health[1] = 40000
 	self.modifiers.forced[1].data.damage[1] = 30000
 	self.repeating_modifiers.forced[1].data.health[1] = 40000
-	self.repeating_modifiers.forced[1].data.damage[1] = 30000
+	self.repeating_modifiers.forced[1].data.damage[1] = 30000--]]
 	
 	--remove cost of starting a spree
 	self.cost_per_level = 0
