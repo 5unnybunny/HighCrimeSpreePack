@@ -53,7 +53,7 @@ function CrimeSpreeManager:server_active_modifiers()
 	server_modifiers(self)
 		if not self:_is_host() then
 			return self._global.server_modifiers or {}
-			self:_add_frame_callback(callback(managers.menu_component, managers.menu_component, "refresh_crime_spree_details_gui"))
+			--self:_add_frame_callback(callback(managers.menu_component, managers.menu_component, "refresh_crime_spree_details_gui"))
 		return {}
 		else
 			return self:in_progress() and self:active_modifiers() or {}
