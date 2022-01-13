@@ -51,5 +51,8 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 		160,
 		2000
 	}
-		
+	
+	--lockpicker king always available
+	self.assets.quick_locks.stealth = false
+	
 end)  
