@@ -10,7 +10,7 @@ function CrimeSpreeManager:_setup_modifiers()
 			for _, modifier in ipairs(self._modifiers) do
 				modifier:destroy()
 			end
-		end16
+		end
 	
 		self._modifiers = {}
 	
