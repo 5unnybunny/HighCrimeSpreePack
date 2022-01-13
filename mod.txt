@@ -12,7 +12,7 @@
 		"script_path" : "crimespreetweakdata.lua"
 	},
 	{
-		"hook_id" : "lib/managers/crimespreemanager.lua"
+		"hook_id" : "lib/managers/crimespreemanager.lua",
 		"script_path" : "crimespreemanager.lua"
 	]
 	
