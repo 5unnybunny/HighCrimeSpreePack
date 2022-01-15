@@ -57,7 +57,7 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 		
 	--more throwables is now actually 50% more
 	self.assets.increased_throwables.data.data = {
-		throwables = 70
+		throwables = 50
 	}
 			
 	
