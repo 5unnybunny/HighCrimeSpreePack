@@ -54,5 +54,8 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 	
 	--lockpicker king always available
 	self.assets.quick_locks.stealth = false
+		
+	--more throwables is now actually 50% more
+	self.assets.increased_throwables.data.throwables = 50		
 	
 end)  
