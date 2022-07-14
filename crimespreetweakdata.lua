@@ -59,3 +59,7 @@ Hooks:PostHook(CrimeSpreeTweakData, "init", "HCSP_crimespreetweakdata", function
 	self.assets.increased_throwables.data.throwables = 50		
 	
 end)  
+
+Hooks:PostHook(CrimeSpreeTweakData, "init_exclusion_data", "HCSP_crimespreetweakdata_init_exclusion_data", function(self)
+		damage = table.list_to_set({})
+end)
