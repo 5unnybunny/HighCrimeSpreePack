@@ -1,7 +1,7 @@
 {
 	"name" : "High Crime Spree Pack",
 	"description" : "Fixes load times for crime spree but also makes your spree only scale once every 100k",
-	"author" : "Bunny Cunny",
+	"author" : "sunny_bunny",
 	"contact" : "",
 	"blt_version" : 2,
 	"version": "1.2",
